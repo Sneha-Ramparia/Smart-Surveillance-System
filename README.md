@@ -1,23 +1,26 @@
-# 🔒 Smart Surveillance System
+# Smart Surveillance System
 
-An intelligent IoT-based home security project using **ESP32-CAM**, **face recognition**, and **Telegram alerts**. It detects unknown faces in real-time, sends image alerts to your phone, and provides a desktop GUI for full control — all built with open-source tools.
+An IoT-based home security system using **ESP32-CAM** for live face detection and real-time alerts via **Telegram**. With a simple Python GUI, users can start surveillance, manage known faces, and capture intruder footage — all from one desktop interface.
 
 ---
 
-## 📸 How It Works
+## How It Works
 
-- 📷 ESP32-CAM streams live video over Wi-Fi.
-- 🧠 Python-based face recognition checks for known faces.
-- 🚨 Unknown face? It captures the frame and sends it to **Telegram**.
-- 🖥 A user-friendly GUI lets you:
-  - Add/remove users
+- ESP32-CAM streams live video over Wi-Fi.
+- Face recognition detects known or unknown people.
+- If an **unknown face** is detected:
+  - It captures the image
+  - Sends an alert with the photo to your **Telegram** chat
+- A custom **Tkinter GUI** lets you:
+  - Add/remove known users
   - Start/stop surveillance
   - View saved intruder images
-  - Record video footage
+  - Record activity manually
+
 
 ---
 
-## 💻 Tech Stack
+## Tech Stack
 
 | Component       | Technology          |
 |-----------------|---------------------|
@@ -26,14 +29,12 @@ An intelligent IoT-based home security project using **ESP32-CAM**, **face recog
 | Libraries       | OpenCV, face_recognition, Tkinter, PIL |
 | Alerts          | Telegram Bot API    |
 | Interface       | Desktop GUI (Tkinter) |
-| Deployment      | Local (No cloud needed) |
 
 ---
 
-## 🧠 Features
+## Features
 
-- Motion-triggered face detection
+- Real-time face detection using ESP32-CAM
 - Real-time image alerts via Telegram
-- One-click recording and user management
-- Offline local processing (no cloud)
-- Folder-based face recognition system
+- Easy user management via GUI 
+- Motion-triggered image capture
