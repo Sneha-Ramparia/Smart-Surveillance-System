@@ -9,10 +9,10 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, simpledialog
 from PIL import Image, ImageTk
 
-ESP32_CAM_URL = "http://192.168.114.193/cam-hi.jpg"
-BOT_TOKEN = "7929760346:AAEFCtOFH7YVjK5qdPKIW78Ng3dFXKQySnE"
-CHAT_ID = "5511160788"
-FACE_MATCH_THRESHOLD = 0.45
+ESP32_CAM_URL = "http://<your-esp32-ip>/cam-hi.jpg"
+BOT_TOKEN = "<your-telegram-bot-token>"
+CHAT_ID = "<your-chat-id>"
+FACE_MATCH_THRESHOLD = 0.45  
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 IMAGE_FOLDER = os.path.join(script_dir, 'image_folder')
