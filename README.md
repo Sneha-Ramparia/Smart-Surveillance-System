@@ -1,24 +1,39 @@
-# Smart Surveillance System
-An IoT-based home security system using **ESP32-CAM** for live face detection and real-time alerts via **Telegram**. With a simple Python GUI, users can start surveillance, manage known faces, and capture intruder footage — all from one desktop interface.
+# 🔒 Smart Surveillance System
 
-## How It Works
+An intelligent IoT-based home security project using **ESP32-CAM**, **face recognition**, and **Telegram alerts**. It detects unknown faces in real-time, sends image alerts to your phone, and provides a desktop GUI for full control — all built with open-source tools.
 
-- ESP32-CAM streams live video over Wi-Fi.
-- Face recognition detects known or unknown people.
-- If an **unknown face** is detected:
-  - It captures the image
-  - Sends an alert with the photo to your **Telegram** chat
-- A custom **Tkinter GUI** lets you:
-  - Add/remove known users
+---
+
+## 📸 How It Works
+
+- 📷 ESP32-CAM streams live video over Wi-Fi.
+- 🧠 Python-based face recognition checks for known faces.
+- 🚨 Unknown face? It captures the frame and sends it to **Telegram**.
+- 🖥 A user-friendly GUI lets you:
+  - Add/remove users
   - Start/stop surveillance
   - View saved intruder images
-  - Record activity manually
+  - Record video footage
 
-## Features
+---
 
-✅ Real-time face detection using ESP32-CAM  
-✅ Telegram bot alerts with intruder photo  
-✅ Easy user management via GUI  
-✅ Motion-triggered image capture  
-✅ Lightweight, no cloud required  
-✅ Built fully with open-source tools
+## 💻 Tech Stack
+
+| Component       | Technology          |
+|-----------------|---------------------|
+| Hardware        | ESP32-CAM           |
+| Programming     | Python              |
+| Libraries       | OpenCV, face_recognition, Tkinter, PIL |
+| Alerts          | Telegram Bot API    |
+| Interface       | Desktop GUI (Tkinter) |
+| Deployment      | Local (No cloud needed) |
+
+---
+
+## 🧠 Features
+
+- Motion-triggered face detection
+- Real-time image alerts via Telegram
+- One-click recording and user management
+- Offline local processing (no cloud)
+- Folder-based face recognition system
